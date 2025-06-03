@@ -171,6 +171,24 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
+        <h2 class="title is-3">Regional Concept Attention</h2>
+        <figure class="image">
+          <img src="static/images/figure4.jpg" alt="MY ALT TEXT" style="width:100%; height:auto;"/>
+        </figure>
+        <div class="content has-text-justified">
+          <p>
+             The Regional Concept Attention (RCA) modulates the cross-attention layer in the diffusion model. Individual concept query vectors are computed with image features and each concept masks. Subsequently, key and value vectors for each concept are derived using concept-specific LoRAs and prompts. Then concept-specific attention features are computed with each query, key, and value. The final cross-attention features are aggregated with masked concept-specific attention features.
+          </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
         <h2 class="title is-3">Qualitative Results</h2>
         <figure class="image">
           <img src="static/images/figure5.jpg" alt="MY ALT TEXT" style="width:100%; height:auto;"/>
@@ -190,7 +208,12 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{song2025multidreamer3d,
+  title={MultiDreamer3D: Multi-concept 3D Customization with Concept-Aware Diffusion Guidance},
+  author={Song, Wooseok and Chang, Seunggyu and Yoo, Jaejun},
+  journal={arXiv preprint arXiv:2501.13449},
+  year={2025}
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
